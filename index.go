@@ -4,18 +4,17 @@ package main
 		"fmt"
 	)
 func main()  {
-	// points := [...]int {7,10,5,6}
-	// fmt.Printf("%v %T", points, points)
-	
-	var course [5]string
-	course[0] = "alex"
-	course[1] = "Tom"
-	course[2] = "Yuh"
-	course[3] = "Space"
-	
-	fmt.Printf("%v %T\n", course, course)
-	fmt.Printf("%v %T\n", course[2], course)
-	fmt.Println(len(course))
+	// slice 
+	a := []int{2,5,10,40,50,60}
+	b := a
+	b[1] = 20
+	fmt.Println(a)
+	fmt.Println(b)
+	fmt.Println(len(a))
+	fmt.Println(cap(a)) // Sức chứa
 	
 }
+
+
+
 
